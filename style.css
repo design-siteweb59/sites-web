@@ -7,12 +7,22 @@ html, body {
   padding: 0;
 }
 
-/* Forcer texte noir partout */
+/* Texte noir par défaut */
 body * {
   color: #000000 !important;
 }
 
-/* Header bleu avec texte blanc */
+/* Titre des sections en bleu */
+h2 {
+  color: #007BFF !important;
+}
+
+/* Titre des offres aussi en bleu */
+h3 {
+  color: #007BFF !important;
+}
+
+/* Header */
 header {
   background-color: #007BFF;
   color: white;
@@ -88,15 +98,9 @@ section {
   margin: 1rem 0;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  color: #000000;
 }
 
-/* Titres bleus */
-h2, h3 {
-  color: #007BFF;
-}
-
-/* Avis style */
+/* Avis */
 .avis p {
   font-style: italic;
   margin-bottom: 1rem;
@@ -116,8 +120,8 @@ input, textarea, button {
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
-  color: #000000;
   background-color: white;
+  color: #000000;
 }
 
 button {
