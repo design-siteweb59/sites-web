@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Créateur de Sites Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Créateur de Sites Web</h1>
+    <p>Sites modernes, rapides et abordables – par un développeur passionné</p>
+  </header>
+
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#apropos">À propos</a>
+      <a href="#offres">Offres</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="apropos">
+    <h2>👨‍💻 À propos</h2>
+    <div class="card">
+      <p>Je suis un développeur web débutant motivé à créer des sites web modernes et efficaces pour les petites entreprises, indépendants ou associations. Mon objectif est de fournir des services accessibles à tous.</p>
+    </div>
+  </section>
+
+  <section id="offres">
+    <h2>📦 Offres & Tarifs</h2>
+    <div class="card">
+      <h3>🌱 Formule Essentielle – 80 €</h3>
+      <p>Site vitrine simple (1 page), responsive, design propre.</p>
+    </div>
+    <div class="card">
+      <h3>🚀 Formule Standard – 150 €</h3>
+      <p>3 à 5 pages, formulaire de contact, design personnalisé.</p>
+    </div>
+    <div class="card">
+      <h3>🌐 Formule Premium – 300 €</h3>
+      <p>Site complet avec blog, SEO de base, animations, support inclus.</p>
+    </div>
+  </section>
+
+  <section id="avis">
+    <h2>⭐ Avis Clients</h2>
+    <div class="card avis">
+      <p>"Excellent travail ! Mon site est magnifique et rapide. Merci 🙏" – Laura B.</p>
+      <p>"Jeune homme à l'écoute, et très bon rapport qualité/prix." – Mehdi.</p>
+      <p>"Je recommande à 100 %. Le résultat est au top !" – Laurence F.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📨 Me Contacter</h2>
+    <div class="card">
+      <form action="https://formsubmit.co/design.site.web69@gmail.com" method="POST">
+        <input type="text" name="Nom" placeholder="Votre nom" required>
+        <input type="email" name="Email" placeholder="Votre email" required>
+        <textarea name="Message" rows="6" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 – design.site.web69@gmail.com<br>
+    | Tout droits réservés
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navLinks");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
