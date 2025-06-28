@@ -7,6 +7,69 @@ body {
   color: inherit !important;
 }
 
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #0056b3;
+  padding: 1rem;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    background-color: #0056b3;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
 .card {
   background-color: #222;
   color: white;
@@ -16,14 +79,33 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
-.card p, .card h2 {
+.card p,
+.card h2 {
   color: white;
 }
 
-input, textarea {
+.avis p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007BFF;
+  padding-left: 1rem;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #555;
+  font-size: 1rem;
   background-color: #333;
   color: white;
-  border: 1px solid #555;
 }
 
 button {
@@ -32,4 +114,13 @@ button {
   font-weight: bold;
   border: none;
   cursor: pointer;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #333;
+  color: white;
 }
