@@ -1,12 +1,18 @@
-body {
-  background-color: #000000 !important;
-  color: #ffffff !important;
+/* Fond blanc, texte noir global */
+html, body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-* {
-  color: inherit !important;
+/* Forcer texte noir partout */
+body * {
+  color: #000000 !important;
 }
 
+/* Header bleu avec texte blanc */
 header {
   background-color: #007BFF;
   color: white;
@@ -14,12 +20,14 @@ header {
   text-align: center;
 }
 
+/* Navigation */
 nav {
   background-color: #0056b3;
   padding: 1rem;
   position: relative;
 }
 
+/* Liens de navigation */
 .nav-links {
   display: flex;
   justify-content: center;
@@ -32,6 +40,7 @@ nav {
   font-weight: bold;
 }
 
+/* Menu hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -49,6 +58,7 @@ nav {
   border-radius: 2px;
 }
 
+/* Responsive menu */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -64,48 +74,50 @@ nav {
   }
 }
 
+/* Sections */
 section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
+/* Cartes avec fond clair */
 .card {
-  background-color: #222;
-  color: white;
+  background-color: #f9f9f9;
   padding: 1.5rem;
   margin: 1rem 0;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  color: #000000;
 }
 
-.card p,
-.card h2 {
-  color: white;
+/* Titres bleus */
+h2, h3 {
+  color: #007BFF;
 }
 
+/* Avis style */
 .avis p {
   font-style: italic;
   margin-bottom: 1rem;
   border-left: 4px solid #007BFF;
   padding-left: 1rem;
-  color: white;
 }
 
+/* Formulaire */
 form {
   display: flex;
   flex-direction: column;
 }
 
-input,
-textarea {
+input, textarea, button {
   padding: 0.75rem;
   margin: 0.5rem 0;
   border-radius: 5px;
-  border: 1px solid #555;
+  border: 1px solid #ccc;
   font-size: 1rem;
-  background-color: #333;
-  color: white;
+  color: #000000;
+  background-color: white;
 }
 
 button {
@@ -114,10 +126,9 @@ button {
   font-weight: bold;
   border: none;
   cursor: pointer;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
 }
 
+/* Footer sombre */
 footer {
   text-align: center;
   padding: 1.5rem;
