@@ -1,4 +1,167 @@
-<!DOCTYPE html>
+*<!DOCTYPE html>
+<style>
+  /* Fond blanc, texte noir global */
+html, body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Texte noir par défaut */
+body * {
+  color: #000000 !important;
+}
+
+
+/* Titre des sections en bleu */
+h2 {
+  color: #007BFF !important;
+}
+
+
+/* Titre des offres aussi en bleu */
+h3 {
+  color: #007BFF !important;
+}
+
+
+/* Header */
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Navigation */
+nav {
+  background-color: #0056b3;
+  padding: 1rem;
+  position: relative;
+}
+
+
+/* Liens de navigation */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Menu hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+
+/* Responsive menu */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    background-color: #0056b3;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+/* Sections */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+/* Cartes avec fond clair */
+.card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Avis */
+.avis p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007BFF;
+  padding-left: 1rem;
+}
+
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+input, textarea, button {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: white;
+  color: #000000;
+}
+
+
+button {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Footer sombre */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #333;
+  color: white;
+  .titre-bleu {
+  color: #007BFF !important;
+}
+}
+</style>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -40,16 +203,16 @@
   <section id="offres">
     <h2>📦 Offres & Tarifs</h2>
     <div class="card">
-      <h3>🌱 Formule Essentielle – à partir de : 1000 €</h3>
-      <p>Site vitrine simple (1 à 7 pages), responsive, design propre.</p>
+      <h3>🌱 Formule Essentielle – à partir de : 1000 €</h3>
+      <p>Site vitrine simple (1 à 5 pages), responsive, design propre.</p>
     </div>
     <div class="card">
-      <h3>[ A VENIR ] 🚀 Formule Standard – à partir de : A VENIR </h3>
-      <p>3 à 5 pages, formulaire de contact, design personnalisé.</p>
+      <h3>🚀 Formule Standard – à partir de : 1450 €</h3>
+      <p>3 à 7 pages, formulaire de contact, design personnalisé.</p>
     </div>
     <div class="card">
-      <h3>🌐 [ A VENIR ] Formule Premium – à partir de : A VENIR </h3>
-      <p>Site complet, SEO de base , animations, support inclut.</p>
+      <h3>🌐[A VENIR] Formule Premium – à partir de 1950 €  </h3>
+      <p>Site complet,animations, support inclus ...</p>
     </div>
   </section>
 
@@ -57,7 +220,7 @@
   <section id="avis">
     <h2>⭐ Avis Clients</h2>
     <div class="card avis">
-    
+      PROCHAINEMENT
     </div>
   </section>
 
